@@ -291,7 +291,7 @@ a:hover{
     
   }
   .header__search{
-      border: 2px solid @black;
+    border: 1px solid @text;
       margin-left: 7rem;
       border-radius: 4rem;
       width: 100%;
@@ -317,11 +317,13 @@ a:hover{
           padding: 1.2rem;
           background: rgb(94, 93, 93);
           border-radius: 4rem;
-          margin-left: 1rem;
+          margin-left: 1.4rem;
           border: 2px solid rgb(94, 93, 93);
           transition: 0.3s;
+         
           &:hover{
               padding: 1.4rem;
+              margin-left: 1rem;
           }
           &-text{
               .roboto();
@@ -342,11 +344,12 @@ a:hover{
         padding: 1.1rem;
         background: transparent;
         border-radius: 4rem;
-        margin-left: 1rem;
+        margin-left: 1.6rem;
         border: 2px solid @black;
         transition: 0.3s;
           &:hover{
               padding: 1.4rem;
+              margin-left: 1rem;
           }
         &-text{
             .roboto();
@@ -360,16 +363,27 @@ a:hover{
       &-button{
         padding: 1.2rem 2rem;
         font-size: 1.4rem;
-        margin-left: 1rem;
+        margin-left: 1.4rem;
         transition: 0.3s;
           &:hover{
               padding: 1.4rem 2.2rem;
+              margin-left: 1rem;
           }
       }
   }
+  .test{
+    width: 100%;
+    top: 6%;
+    left: 0;
+    z-index: 50;
+    position: fixed;
+  }
   .header-three{
-      padding: 2rem 0rem;
+    
+    background: #fff;
+      
       &-block{
+        padding: 2rem 0rem;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -440,7 +454,7 @@ a:hover{
         
         &-img{
             width: 100%;
-            border-radius: 6rem;
+            border-radius: 3rem;
             &-service{
                 width: 100%;
                 border-radius: 2rem;
@@ -486,7 +500,7 @@ a:hover{
 }
 .masters{
     &-block{
-        padding:4rem 6rem;
+        padding:4rem 6rem 0rem 6rem;
         border-radius: 2rem;
         background-color: @bggray;
 
@@ -508,7 +522,7 @@ a:hover{
         &-person{
             text-align: center;
             width: 80%;
-            min-height: 26rem;
+            min-height: 28rem;
             transition: 0.3s;
             
         }
@@ -556,7 +570,7 @@ a:hover{
     &-parametr{
        font-size: 4.6rem;
        .roboto();
-       font-weight: 400;
+       font-weight: 900;
        padding: 0;
        color: @text;
        padding: 0; 
@@ -626,7 +640,7 @@ a:hover{
         color: @text;
         
         padding-top: 1.7rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         padding: 1.7rem 0.8rem 0rem 0.8rem;
     }
     &-span{
@@ -744,9 +758,9 @@ transform:translate(-50%, -50%);
         display: flex;
         justify-content: center;
         a{
-            width: 31%;
-            margin-left: 1%;
-            margin-right: 1%;
+            width: 27%;
+            margin-left: 3%;
+            margin-right: 3%;
             display: flex;
             justify-content: center;
             &:hover{
@@ -760,7 +774,7 @@ transform:translate(-50%, -50%);
         padding: 2rem 2.5rem;
         border-radius: 2rem;
         background-color: @bggray;
-        width: 80%;
+        width: 100%;
         transition: 0.3s;
        
     }
@@ -800,10 +814,10 @@ transform:translate(-50%, -50%);
     &-star{
         padding: 0;
         color:rgb(253,185,51);
-	font-size:3.6rem;
+	font-size:3rem;
     .roboto();
     font-weight: 400;
-	margin: 0 4px;
+	margin: 0 0px;
     }
     &-rating{
         .roboto();
@@ -1143,12 +1157,17 @@ transform:translate(-50%, -50%);
         margin-right: 1.3rem;
     }
     &-link{
+        cursor: pointer;
         &:hover{
             .seo-arrow-img{
                 left: 57%;
             }
         }
     }
+    &-shadow{
+        transition: 0.3s;
+    }
+   
 }
 .footer{
     background: linear-gradient(90deg, #365ba8, #cd128b, #365ba8) ;
@@ -1201,7 +1220,7 @@ transform:translate(-50%, -50%);
     }
     &-social{
         &-img{
-            width: 4rem;
+            width: 5rem;
         }
         &-link{
             .roboto();
