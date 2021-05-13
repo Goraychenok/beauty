@@ -32,25 +32,29 @@ $(function() {
     
     var headerTwice = $('.header').height();
     var headerHeight = $('.header-twice').height();
-    var blockTop = $('.header').offset().top;
     var blockBot =  $('.header-twice').height();
     var CountUpFlag = 0;
     var $window = $(window);
    
-    console.log(blockBot);
+    
     $window.on('load scroll', function() {
         var top = $window.scrollTop();
-        var height = $window.height() - blockBot - headerTwice;
+        var height = $window.height() - blockBot - headerTwice - headerTwice;
         
-        if (top +   headerTwice >= height && CountUpFlag == 0) {
-            console.log(top +   headerTwice);
-            console.log(headerHeight);
+        if (top +   headerTwice >= $window.height() -  height && CountUpFlag == 0) {
             CountUp();
             CountUpFlag = 1;
+        }
+        else if(top +   headerTwice < $window.height() -  height && CountUpFlag == 1){
+            CountDown();
+            CountUpFlag = 0;
         }
     });
     function CountUp() {
         $('.header-three').addClass('test');
+    }
+    function CountDown() {
+        $('.header-three').removeClass('test');
     }
 });
 

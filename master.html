@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <title>Beauty Pro</title>
+</head>
+<body>
+    <header class="header-main">
+        <div class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__language" >
+                        <img src="./img/header/language-02.png" alt="" class="header__language-img">
+                    </div>
+                    
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#" class=" header__link">О нас</a></li>
+                            <li><a href="#"   class="header__link">Блог</a></li>
+                            <li><a href="#"   class="header__link">Новости</a></li>
+                            <li><a href="#"   class="header__link">Сотрудничество</a></li>
+                            
+                        </ul>
+                        <div class="header__navigation-block">
+                            <a href="#">
+                                <img src="./img/header/navigation-02.png" alt="" class="header__navigation-img">
+                                <p class="header__navigation-text">Ваш город Санкт-Петербург</p>
+                            </a>
+                        </div>
+                        <div class="header__register-block">
+                            <img src="./img/header/man-02.png" alt="" class="header__register-img">
+                            <a href="#" class="header__register-link">Вход</a>
+                            <div class="header__register-brake"></div>
+                            <a href="" class="header__register-link">Регистрация</a>
+                        </div>
+                        <div class="header-twice-body-mobile">
+                            <a href="./service.html" class="header-three-link-mobile">Парикмахер</a>
+                            <a href="./service.html" class="header-three-link-mobile">Маникюр/Педикюр</a>
+                            <a href="./service.html" class="header-three-link-mobile">Косметолог </a>
+                            <a href="./service.html" class="header-three-link-mobile">Визаж  </a>
+                            <a    href="./service.html" class="header-three-link-mobile">Брови/Ресницы</a>
+                            <a href="./service.html" class="header-three-link-mobile">Коррекция фигуры </a>
+                            <a href="./service.html" class="header-three-link-mobile"> Массаж </a>
+                            <a href="./service.html" class="header-three-link-mobile">Депиляция</a>
+                            <a href="./service.html" class="header-three-link-mobile">Акции  </a>
+                            <a href="./service.html" class="header-three-link-mobile">Обучение</a>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                    
+     
+                </div>
+            </div>
+        </div>
+        <div class="header-twice">
+            <div class="container">
+                <div class="header-twice-body">
+                    <div class="header__logo">
+                        <img src="./img/header/logo-02.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Поиск по сайту " class="header__search">
+                    <div class="header__search-block">
+                        
+                        <a href="#" class="header__search-link">
+                            <div class="header__search-map">
+                                <p class="header__search-map-text">Рядом</p>
+                                <img src="./img/header/map.svg" alt="" class="header__search-map-img">
+                            </div>
+                        </a>
+                        <a href="#" class="header__search-link">
+                            <div class="header__search-region">
+                                <p class="header__search-region-text">Район</p>
+                                <img src="./img/header/home.svg" alt="" class="header__search-map-img">
+                            </div>
+                        </a>
+                        <button class="button header__search-button">Искать</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header-three">
+            <div class="container">
+                <div class="header-three-block">
+                    <a href="./service.html" class="header-three-link">Парикмахер</a>
+                    <a href="./service.html" class="header-three-link">Маникюр/Педикюр</a>
+                    <a href="./service.html" class="header-three-link">Косметолог </a>
+                    <a href="./service.html" class="header-three-link">Визаж  </a>
+                    <a href="./service.html" class="header-three-link">Брови/Ресницы</a>
+                    <a href="./service.html" class="header-three-link">Коррекция фигуры </a>
+                    <a href="./service.html" class="header-three-link"> Массаж </a>
+                    <a href="./service.html" class="header-three-link">Депиляция</a>
+                    <a href="./service.html" class="header-three-link">Акции  </a>
+                    <a href="./service.html" class="header-three-link">Обучение</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="bread-crumbs">
+                <a href="#"><p class="bread-crumbs-name bread-crumbs-name-active">Главная</p></a>
+                <img src="./img/service/arrow.svg" alt="" class="bread-crumbs-img">
+                <a href="#"><p class="bread-crumbs-name bread-crumbs-name-active">Выбор услуг</p></a>
+                <img src="./img/service/arrow.svg" alt="" class="bread-crumbs-img">
+                <a href="#"><p class="bread-crumbs-name bread-crumbs-name-active">Маникюр</p></a>
+                <img src="./img/service/arrow.svg" alt="" class="bread-crumbs-img">
+                <a href="#"><p class="bread-crumbs-name">Romanova Alexa</p></a>
+            </div>
+            <div class="master-first-block">
+                <img src="./img/master/images-02.png" alt="" class="master-first-block-img">
+                <div class="master-first-block-person">
+                    <img src="./img/master/person-02.png" alt="" class="master-img">
+                    <div class="service-right-blocking">
+                        <h3 class="service-name">Romanova Alexa</h3>
+                        <div class="service-cost">
+                          <div class="rewiews-stars">
+                              <span class="rewiews-star  ">&#9733;</span>
+                              <span class=" rewiews-star">&#9733;</span>
+                              <span class=" rewiews-star">&#9733;</span>
+                              <span class=" rewiews-star">&#9733;</span>
+                              <span class="rewiews-star">&#9734;</span>
+                              <span class="rewiews-rating">4,2</span>
+                          </div>
+                          <a href="#" class="service-linked">Смотреть отзывы</a>
+                        </div>
+                      <p class="rewiews-cost">Всего оценок 56</p>
+                    </div>
+                    <div class="master-button-block">
+                        <button class="master-button-map master-button button"><img src="./img/master/map-02.png" alt=""></button>
+                        <button class="master-button-favorite master-button button">В избранное</button>
+                        <button class="master-button-writting master-button button">Записаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="all-block">
+                <div class="left-block">
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">О салоне</h3>
+                       
+                    </div>
+                    <div class="master-block-left">
+                        <p class="master-paragraph">Cалон для создания и поддержания вашей красоты и здоровья. Эстетический ухоженный вид - залог хорошего настроения и успеха!</p>
+                        <p class="master-paragraph">В самом центре города, в уютной атмосфере, Вас встретят чашечкой свежесваренного кофе или классического китайского чая.</p>
+                    </div>
+
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">Место работы</h3>
+                       
+                    </div>
+                    <div class="master-block-left">
+                        <div class="service-map-block">
+                            <h5 class="service-map-title master-text">Принимает у себя</h5>
+                            <div class="service-map-blocking">
+                                <img src="./img/service/green.png" alt="" class="service-circle">
+                                <span class="service-span master-text">Девяткино</span>
+                              </div>
+                          </div>
+                        <div class="service-map-block">
+                            <h5 class="service-map-title master-text">Выезд к клиенту</h5>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/gray.png" alt="" class="service-circle">
+                              <span class="service-span master-text">СПб и Ленобласть,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/red.png" alt="" class="service-circle">
+                              <span class="service-span master-text">Автово,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/blue.png" alt="" class="service-circle">
+                              <span class="service-span master-text">Адмиралтейская,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/gree_two.png" alt="" class="service-circle">
+                              <span class="service-span master-text">Академическая,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/purple.png" alt="" class="service-circle">
+                              <span class="service-span  master-text">Балтийская,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/rose.png" alt="" class="service-circle">
+                              <span class="service-span master-text">Беговая,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/yellow.png" alt="" class="service-circle">
+                              <span class="service-span master-text">Бухарестская,</span>
+                            </div>
+                            <div class="service-map-blocking">
+                              <img src="./img/service/brown.png" alt="" class="service-circle">
+                              <span class="service-span master-text">Василеостровская</span>
+                            </div>
+                          </div>
+                        <div class="service-map-block">
+                            <h5 class="service-map-title master-text">Адрес мастера</h5>
+                            <p class="service-paragraph master-text">м. Алма-Атинская</p>
+                            <a href="#" class="service-link master-text">На карте</a>
+                          </div>
+                          <div class="service-map-block">
+                            <h5 class="service-map-title master-text">Режим работы</h5>
+                            <p class="service-paragraph master-text">ПН-ПТ: 10:00 - 20:00</p>
+                            <p class="service-paragraph master-text">СБ-ВС: выходной</p>
+                          </div>
+                    </div>
+                    
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">Лидеры месяца</h3>
+                       
+                    </div>
+                    <div class="liders-block">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="liders-img">
+                    </div>
+                    <a href="#">
+                        <div class="liders-arrow">
+                            <span class="services-span">Смотреть всех</span>
+                            <img src="./img/firstPage/services/Ресурс 1.svg" alt="" class="liders-arrow-img">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="./img/service/first_banner-02.png" alt="" class="banner-img">
+                    </a>
+                    <a href="#">
+                        <div class="banner-block">
+                            <img src="./img/service/banner_two-02.png" alt="" class="banner-img">
+                            <div class="banner-block-text">
+                                <h3 class="banner-title">наращивание<br>
+                                    <span>ресниц</span>
+                                </h3>
+                                <p class="banner-paragraph">всего 2000 руб.</p>
+                                <button class="button banner-button">Записаться</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner-block">
+                            <img src="./img/service/banner_two-02.png" alt="" class="banner-img">
+                            <div class="banner-block-text">
+                                <h3 class="banner-title">наращивание<br>
+                                    <span>ресниц</span>
+                                </h3>
+                                <p class="banner-paragraph">всего 2000 руб.</p>
+                                <button class="button banner-button">Записаться</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="liders-arrow">
+                            <span class="services-span">Смотреть все акции</span>
+                            <img src="./img/firstPage/services/Ресурс 1.svg" alt="" class="liders-arrow-img">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner-block">
+                            <img src="./img/service/banner-three-02.png" alt="" class="banner-img">
+                            <div class="banner-block-text-two">
+                                <h3 class="banner-title-two">Подпишись на наш  Instagram
+                                </h3>
+                                <img src="./img/firstPage/footer/logo-02.png" alt="" class="banner-logo">
+                                <button class="button banner-button-two">Подписаться</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="right-block">
+                    <div class="filter-block-name master-block">
+                        <div class="master-pusto"></div>
+                        <h3 class="filter-name master-block-name">Услуги</h3>
+                        <p class="master-sename">Стоимость от</p>
+                       
+                    </div>
+                    <div class="master-block-cost">
+                        <div class="master-block-cost-element">
+                            <p class="master-block-cost-element-paragraph">Стрижка</p>
+                            
+                            <p class="master-block-cost-element-paragraph"><span class="master-block-cost-element-span">............................................................</span>1000 руб.</p>
+                        </div>
+                        <div class="master-block-cost-element">
+                            <p class="master-block-cost-element-paragraph">Окрашивание волос</p>
+                            
+                            <p class="master-block-cost-element-paragraph"><span class="master-block-cost-element-span">................................................</span>1000 руб.</p>
+                        </div>
+                        <div class="master-block-cost-element">
+                            <p class="master-block-cost-element-paragraph">Калифорнийское мелирование волос</p>
+                           
+                            <p class="master-block-cost-element-paragraph"> <span class="master-block-cost-element-span">...............................</span>4000 руб.</p>
+                        </div>
+                        <div class="master-block-cost-element">
+                            <p class="master-block-cost-element-paragraph">Брондирование волос</p>
+                            
+                            <p class="master-block-cost-element-paragraph"><span class="master-block-cost-element-span">..............................................</span>4000 руб.</p>
+                        </div>
+                        <div class="master-block-cost-element">
+                            <p class="master-block-cost-element-paragraph">Колорирование волос</p>
+                            
+                            <p class="master-block-cost-element-paragraph"><span class="master-block-cost-element-span">..............................................</span>4000 руб.</p>
+                        </div>
+                        <div class="master-block-cost-element">
+                            <p class="master-block-cost-element-paragraph">Тонирование волос</p>
+                            
+                            <p class="master-block-cost-element-paragraph"><span class="master-block-cost-element-span">................................................</span>4000 руб.</p>
+                        </div>
+                        <a href="#" class="master-link">Развернуть весь прайс-лист (12)</a>
+                    </div>
+                    <div class="filter-block-name ">
+                        <h3 class="filter-name">Работы (336)</h3>
+                       
+                    </div>
+                    <div class="master-works">
+                        <div class="master-works-block">
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            <a href="#" class="master-works-link">
+                                <img src="./img/master/photo-02.png" alt="">
+                            </a>
+                            
+                        </div>
+                        <a href="#" class="master-arrow-link">
+                            <div class="master-arrow">
+                                <span class="services-span">Смотреть всех</span>
+                                <img src="./img/firstPage/services/Ресурс 1.svg" alt="" class="master-arrow-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">Акции(1)</h3>
+                       
+                    </div>
+                    <div class="master-blocking">
+                        <div class="master-blocking-text">
+                            <p class="master-blocking-paragraph">Подробное описание акции в несколько строк. Cалон для создания и поддержания вашей красоты и здоровья.</p>
+                            <p class="master-blocking-paragraph">Старая цена / цена по акции: <span>2000 руб.</span> / 1500 руб</p>
+                            <p class="master-blocking-paragraph">Срок проведения акции: 23 сентября - 30 декабря 2021 г.</p>
+                        </div>
+                        <button class="button master-blocking-button">Записаться</button>
+                    </div>
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">Обучение (1)</h3>
+                       
+                    </div>
+                    <div class="master-blocking">
+                        <div class="master-blocking-text">
+                            <p class="master-blocking-paragraph">Подробное описание условий обучения в несколько строк. Cалон для создания и поддержания вашей красоты и здоровья.</p>
+                            <p class="master-blocking-paragraph">Стоимость обучения: 12 000 руб.</p>
+                            <p class="master-blocking-paragraph">Формат обучения: Очно</p>
+                        </div>
+                        <button class="button master-blocking-button">Записаться</button>
+                    </div>
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">Ищу модель (1)</h3>
+                       
+                    </div>
+                    <div class="master-blocking">
+                        <div class="master-blocking-text">
+                            <p class="master-blocking-paragraph">Подробное описание условий для модели в несколько строк. Cалон для создания и поддержания вашей красоты и здоровья.</p>
+                            <p class="master-blocking-paragraph">
+                                Дата / время: 23 сентября, 18:00</p>
+                            
+                        </div>
+                        <button class="button master-blocking-button">Записаться</button>
+                    </div>
+                    <div class="filter-block-name">
+                        <h3 class="filter-name">Отзывы (15)</h3>
+                       
+                    </div>
+                    <div class="master-rewiews-block">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="master-rewiews-img">
+                        <div class="master-rewiews-blocking">
+                            <h5 class="master-rewiews-title">Кирилловых Наталья </h5>
+                            <p class="master-rewiews-paragraph">2020-10-29 17:55:34</p>
+                            <div class="master-rewiews-block-stars"><p class="master-rewiews-star">Оценка: </p>
+                                <div class="master-stars">
+                                    <span class="rewiews-star  ">&#9733;</span>
+                                    <span class=" rewiews-star">&#9733;</span>
+                                    <span class=" rewiews-star">&#9733;</span>
+                                    <span class=" rewiews-star">&#9733;</span>
+                                    <span class="rewiews-star">&#9734;</span>
+                                    <span class="rewiews-rating">4,2</span>
+                                </div></div>
+                            <p class="master-rewiews-paragraph">Эксперты подберут косметологические средства для домашнего применения, подробно ответят на все интересующие вопросы. Кроме этого, в салоне</p>
+                        </div>
+                    </div>
+                    <div class="master-rewiews-block">
+                        <img src="./img/firstPage/masters/masterFirst-02.png" alt="" class="master-rewiews-img">
+                        <div class="master-rewiews-blocking">
+                            <h5 class="master-rewiews-title">Кирилловых Наталья </h5>
+                            <p class="master-rewiews-paragraph">2020-10-29 17:55:34</p>
+                            <div class="master-rewiews-block-stars"><p class="master-rewiews-star">Оценка: </p>
+                                <div class="master-stars">
+                                    <span class="rewiews-star  ">&#9733;</span>
+                                    <span class=" rewiews-star">&#9733;</span>
+                                    <span class=" rewiews-star">&#9733;</span>
+                                    <span class=" rewiews-star">&#9733;</span>
+                                    <span class="rewiews-star">&#9734;</span>
+                                    <span class="rewiews-rating">4,2</span>
+                                </div></div>
+                            <p class="master-rewiews-paragraph">Эксперты подберут косметологические средства для домашнего применения, подробно ответят на все интересующие вопросы. Кроме этого, в салоне</p>
+                        </div>
+                    </div>
+                    <a href="#" class="master-arrow-link">
+                        <div class="master-arrow">
+                            <span class="services-span">Все комментарии</span>
+                            <img src="./img/firstPage/services/Ресурс 1.svg" alt="" class="master-arrow-img">
+                        </div>
+                    </a>
+                    <div class="master-button-blocking">
+                        <button class="master-button button">Добавить отзыв</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-blocks">
+                <div class="footer-logo">
+                    <img src="./img/firstPage/footer/logo-02.png" alt="" class="footer-logo-img">
+                </div>
+                <div class="footer-block-link">
+                    <ul>
+                        <li><a href="" class="footer-link">О нас</a></li>
+                        <li><a href="" class="footer-link">Блог</a></li>
+                        <li><a href="" class="footer-link">новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block-link">
+                    <ul>
+                        <li><a href="" class="footer-link">Сотрудничество</a></li>
+                        <li><a href="" class="footer-link">регистрация</a></li>
+                        <li><a href="" class="footer-link">карта сайта</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block-link">
+                    <ul>
+                        <li><a href="" class="footer-link">Техподдержка:</a></li>
+                        <li><a href="" class="footer-link">+7 000 000-00-00</a></li>
+                        <li><a href="" class="footer-link">email@email.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block"></div>
+                <div class="footer-block-social">
+                    <div class="footer-block-social-links">
+                        <a href="#">
+                            <img src="./img/firstPage/footer/facebook.svg" alt="" class="footer-social-img">
+                        </a>
+                        <a href="">
+                            <img src="./img/firstPage/footer/insta.svg" alt="" class="footer-social-img">
+                        </a><a href="">
+                            <img src="./img/firstPage/footer/youtube.svg" alt="" class="footer-social-img">
+                        </a>
+                    </div>
+                    <a href="#" class="footer-social-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-social-link">пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+
+
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
