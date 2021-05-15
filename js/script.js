@@ -58,3 +58,11 @@ $(function() {
     }
 });
 
+$('#filter').click(function(event){
+    $('.filter').toggleClass('nothing');
+});
+
+$('#filterButton').click(function(event){
+    $('.filter').addClass('nothing');
+})
+
